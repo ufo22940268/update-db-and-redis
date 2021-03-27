@@ -14,7 +14,7 @@ BEGIN
 END//
 DELIMITER ;
 UPDATE users
-SET nick_name = remove_first_letter_a(nick_name);
+SET nick_name = remove_first_letter_a(nick_name) where nick_name like 'a%';
 EOF
 
 
@@ -36,5 +36,5 @@ BEGIN
 END//
 DELIMITER ;
 UPDATE users
-SET nick_name = remove_first_letter_a(nick_name);
+SET nick_name = remove_first_letter_a(nick_name) where nick_name like 'a%';
 EOF
